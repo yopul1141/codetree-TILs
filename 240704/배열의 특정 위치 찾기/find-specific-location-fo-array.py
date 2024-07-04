@@ -7,4 +7,4 @@ for i in range(1,len(a),2):
 for i in range(2,len(a),3):
     val_3 += a[i]
     cnt += 1
-print(f"{val_2} {val_3/cnt}")
+print(f"{val_2} {val_3/cnt:.1f}")
