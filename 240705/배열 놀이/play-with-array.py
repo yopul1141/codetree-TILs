@@ -12,3 +12,4 @@ for i in range(q):
     else:
         for j in arr[qu[1]-1:qu[2]]:
             print(j,end=" ")
+        print()
