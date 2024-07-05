@@ -1,7 +1,6 @@
-import sys
-max_val = -sys.maxsize
-min_val = sys.maxsize
 arr = list(map(int,input().split()))
+max_val = arr[0]
+min_val = arr[0]
 for i in arr:
     if i == 999 or i == -999:
         break
