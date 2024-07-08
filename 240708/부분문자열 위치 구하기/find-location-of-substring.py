@@ -1,4 +1,4 @@
 n = input()
 find = input()
 
-print(n.count(find))
+print(n.index(find))
