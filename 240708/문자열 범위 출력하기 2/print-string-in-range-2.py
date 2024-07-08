@@ -1,3 +1,4 @@
 a = input()
-for i in a[:-12:-1]:
+find = int(input())
+for i in a[:-find-1:-1]:
     print(i,end = "")
