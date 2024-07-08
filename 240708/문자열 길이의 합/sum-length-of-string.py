@@ -7,7 +7,6 @@ for i in range(n):
     arr.append(a)
 for i in arr:
     cnt_len += len(i)
-    for j in i:
-        if 'a' == j:
-            cnt_a += 1
+    if i[0] == 'a':
+        cnt_a += 1
 print(cnt_len, cnt_a)
