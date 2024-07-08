@@ -12,4 +12,5 @@ for i in range(int(q)):
         for j in n[::-1]:
             s += j
         n = s
+        s = ""
         print(n)
