@@ -1,5 +1,5 @@
 n = input()
-while len(n) > 1:
+for i in range(len(n)-1):
     a = int(input())
     if len(n) >= a:
         n = n[:a]+n[a+1:]
