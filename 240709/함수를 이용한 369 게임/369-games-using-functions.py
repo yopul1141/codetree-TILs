@@ -1,6 +1,6 @@
 a,b = map(int,input().split())
 def is_369(n):
-    return n//10 == 3 or n//10 == 6 or n//10 == 9 or n%10 == 3 or n%10 == 6 or n%10 == 9
+    return (n//10)%3 == 0 or (n%10)%3 == 0
 def is_3(n):
     return n%3 == 0
 cnt = 0
