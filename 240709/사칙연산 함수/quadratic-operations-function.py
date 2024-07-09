@@ -6,7 +6,7 @@ def cal(a,o,c):
         if o == '-':
             return int(a)-int(c)
         if o == '/':
-            return round(int(a) / int(c), 1)
+            return int(a) // int(c)
         if o == '*':
             return int(a)*int(c)
     else:
