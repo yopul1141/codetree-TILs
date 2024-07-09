@@ -10,4 +10,6 @@ for i in range(a,b+1):
     res = is_prime(i)
     if res == True:
         val += i
+if a == b:
+    val = 0
 print(val)
