@@ -6,7 +6,7 @@ for i in range(int(n)):
     arr.append(a)
 arr.sort()
 for i in range(int(n)):
-    if t in arr[i]:
+    if t == arr[i][:len(t)]:
         cnt += 1
         if cnt == int(k):
             print(arr[i])
