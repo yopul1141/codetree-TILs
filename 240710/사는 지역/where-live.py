@@ -4,7 +4,6 @@ class info:
         self.num = num
         self.place = place
 people = []
-people_name = []
 n = int(input())
 for i in range(n):
     name,num,place = input().split()
