@@ -3,7 +3,7 @@ m = input()
 n = sorted(n)
 m = sorted(m)
 def same(n):
-    for i in range(max(len(n),len(m))):
+    for i in range(min(len(n),len(m))):
         if n[i] != m[i]:
             return 'No'
     return 'Yes'
