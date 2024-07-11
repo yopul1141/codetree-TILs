@@ -7,7 +7,7 @@ for i in range(n):
     arr.append(a)
 for i in range(len(arr)):
     if i == 0:
-        continue
+        arr_cnt.append(cnt)
     elif arr[i] == arr[i-1]:
         cnt += 1
     else:
