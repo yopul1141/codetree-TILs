@@ -11,12 +11,12 @@ for _ in range(n):
         for j in range(cur, cur + x):
             black_paint[j] += 1
             color[j] = 2
-        cur += x
+        cur = cur+x-1
     elif direction == 'L':
         for j in range(cur - x, cur):
-            white_paint[j] += 1
-            color[j] = 1
-        cur -= x
+            white_paint[j+1] += 1
+            color[j+1] = 1
+        cur = cur-x+1
 
 white = 0
 black = 0
