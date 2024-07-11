@@ -5,10 +5,10 @@ cnt = 1
 for i in range(n):
     a = int(input())
     arr.append(a)
-for i in range(len(arr)):
-    if len(arr) == 1:
-        arr_cnt.append((cnt))
-    elif arr[i] == arr[i-1]:
+if n == 1:
+    arr_cnt.append((cnt))
+for i in range(n):
+    if arr[i] == arr[i-1]:
         cnt += 1
         if i == len(arr)-1:
             arr_cnt.append((cnt))
