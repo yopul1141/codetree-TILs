@@ -20,7 +20,9 @@ for i in range(len(a)):
         cur = '>'
     elif a[i] < b[i]:
         cur = '<'
-    if pre is not None and pre != cur:
+    else:
+        cur = '='
+    if pre is not None and pre != cur and cur != '=':
         cnt += 1
     pre = cur
 print(cnt)
