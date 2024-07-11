@@ -12,6 +12,15 @@ for i in n:
             dir_num = 0
         else:
             dir_num = 3
+    if i == 'R':
+        if dir_num == 0:
+            dir_num = 1
+        elif dir_num == 1:
+            dir_num = 2
+        elif dir_num == 2:
+            dir_num = 3
+        else:
+            dir_num = 0
     if i == 'F':
         x, y = x + dx[dir_num], y + dy[dir_num]
 
