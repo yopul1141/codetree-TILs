@@ -15,4 +15,4 @@ for i in range(len(arr)):
         if arr[i][j] == 1:
             x.append(i)
             y.append(j)
-print((max(x)-min(x)+1)*(max(y)-min(y)+1))
+print((abs(max(x))-abs(min(x))+1)*(abs(max(y))-abs(min(y))+1))
