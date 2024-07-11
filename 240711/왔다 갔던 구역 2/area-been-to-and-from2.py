@@ -1,6 +1,6 @@
 n = int(input())
-arr = [0] * 100
-cur = 50
+arr = [0] * 1000
+cur = 500
 cnt = 0
 for i in range(n):
     x,direct = input().split()
@@ -8,9 +8,11 @@ for i in range(n):
         for j in range(cur,cur+int(x)):
             arr[j] += 1
         cur = cur+int(x)
-    elif direct == 'L':
+    if direct == 'L':
         for j in range(cur-int(x),cur):
             arr[j] += 1
         cur = cur-int(x)
-cnt = sum(1 for i in arr if i > 1)
+for i in range(len(arr)):
+    if arr[i] > 1:
+        cnt += 1
 print(cnt)
