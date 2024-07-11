@@ -1,8 +1,8 @@
 n = int(input())
-white_paint = [0] * 1000
-black_paint = [0] * 1000
-color = [0] * 1000
-cur = 500
+white_paint = [0] * 10000
+black_paint = [0] * 10000
+color = [0] * 10000
+cur = 5000
 
 for _ in range(n):
     x, direction = input().split()
