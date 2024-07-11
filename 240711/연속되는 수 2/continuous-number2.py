@@ -1,18 +1,14 @@
 n = int(input())
 arr = []
-arr_cnt = []
+max_val = 1
 cnt = 1
 for i in range(n):
     a = int(input())
     arr.append(a)
-if n == 1:
-    arr_cnt.append((cnt))
-for i in range(n):
+for i in range(1,n):
     if arr[i] == arr[i-1]:
         cnt += 1
-        if i == len(arr)-1:
-            arr_cnt.append((cnt))
+        max_val = max(max_val, cnt)
     else:
-        arr_cnt.append(cnt)
         cnt = 1
-print(max(arr_cnt))
+print(max_val)
