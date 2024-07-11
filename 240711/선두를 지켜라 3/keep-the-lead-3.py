@@ -2,7 +2,7 @@ n,m = map(int,input().split())
 a = []
 b = []
 dis = 0
-cnt = 0
+cnt = 1
 pre = None
 for i in range(n):
     v,t = map(int,input().split())
@@ -22,7 +22,7 @@ for i in range(len(a)):
         cur = '<'
     else:
         cur = '='
-    if pre is not None and pre != cur and cur != '=':
+    if pre is not None and pre != cur:
         cnt += 1
     pre = cur
 print(cnt)
