@@ -3,7 +3,7 @@ arr = [
     list(input().split())
     for _ in range(n)
 ]
-base = [0]*10000
+base = [0]*(10000+10000+1)
 k = k+1
 
 scale = 0
