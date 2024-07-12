@@ -18,7 +18,10 @@ for _ in range(n * n):
     nr = r + dr[d]
     nc = c + dc[d]
 
-    if nr < 0 or nr >= n or nc < 0 or nc >= n or arr[nr][nc] != 0:
+    test_nr = r + dr[(d + 1) % 4]
+    test_nc = c + dc[(d + 1) % 4]
+    
+    if nr < 0 or nr >= n or nc < 0 or nc >= n or (arr[test_nr][test_nc] == 0 and arr[nr][nc] != 0):
         d = (d + 1) % 4
         nr = r + dr[d]
         nc = c + dc[d]
