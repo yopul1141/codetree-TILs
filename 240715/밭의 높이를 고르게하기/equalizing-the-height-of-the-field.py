@@ -4,7 +4,7 @@ arr = list(map(int,input().split()))
 min_val = sys.maxsize
 for i in range(n):
     cnt = 0
-    if i+h <= n:
+    if i+t <= n:
         for j in arr[i:i+h]:
             if j > t:
                 j -= 1
