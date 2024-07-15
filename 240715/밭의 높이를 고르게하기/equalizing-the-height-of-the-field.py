@@ -5,11 +5,11 @@ min_val = sys.maxsize
 for i in range(n):
     cnt = 0
     if i+t <= n:
-        for j in arr[i:i+h]:
-            if j > t:
+        for j in arr[i:i+t]:
+            if j > h:
                 j -= 1
                 cnt += 1
-            elif j < t:
+            elif j < h:
                 j += 1
                 cnt += 1
         min_val = min(min_val,cnt)
