@@ -6,6 +6,8 @@ for i in range(n):
     pos = 0
     for j in b:
         if j in a[i:i+m]:
+            if i+m > n:
+                break
             pos += 1
             if pos == m:
                 cnt += 1
