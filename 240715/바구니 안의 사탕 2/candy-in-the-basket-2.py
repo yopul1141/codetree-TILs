@@ -7,11 +7,11 @@ for i in range(n):
     basket[position] = value
 
 max_val = 0
-for i in range(1, 101):
-    if i - k - 1 >= 0 and i + k <= 100:
-        sum_val = 0
-        for j in range(i - k, i + k + 1):
-            sum_val += basket[j]
-        max_val = max(max_val, sum_val)
+
+for i in range(101):
+    sum_val = 0
+    for j in range(max(0, i - k), min(101, i + k + 1)):
+        sum_val += basket[j]
+    max_val = max(max_val, sum_val)
 
 print(max_val)
